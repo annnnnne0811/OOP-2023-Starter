@@ -11,8 +11,7 @@ public class DANI extends PApplet {
 
 	StringList follow;
 	String line;
-	String w;
-	String s;
+;
 
 
 
@@ -40,6 +39,15 @@ public class DANI extends PApplet {
        
 	}
 
+	public String getW()
+	{
+		return w;
+	}
+
+	public String getS()
+	{
+		return s;
+	}
 
 
 	public void keyPressed() 
@@ -48,9 +56,9 @@ public class DANI extends PApplet {
 	}
 
 	// Adding printmodel
-	public void printmodel()
+	public String printmodel()
 	{
-		println("small.txt");
+		return "small.csv";
 	}
 	
 
@@ -88,7 +96,7 @@ public class DANI extends PApplet {
 		noStroke();
 		textSize(20);
         textAlign(CENTER, CENTER);
-		println("small.txt");
+		//println("small.csv");
         
 	}
 
