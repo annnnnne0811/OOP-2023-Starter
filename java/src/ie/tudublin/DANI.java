@@ -1,12 +1,21 @@
 package ie.tudublin;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 import processing.core.PApplet;
 
 public class DANI extends PApplet {
 
-	
+	String w;
+	String s;
+
+	private void loadStrings(String string, String string2) 
+	{
+		
+	}
+
+
+
 
 	public void settings() {
 		size(1000, 1000);
@@ -14,6 +23,9 @@ public class DANI extends PApplet {
 	}
 
     String[] sonnet;
+	private String line;
+
+
 
     public String[] writeSonnet()
     {
@@ -32,11 +44,9 @@ public class DANI extends PApplet {
 		// Load a text file into a String array
 		loadStrings("shakespere.txt", "small.txt"); 
 		
-		String line;
 		// Split a string into an array of words
 		split(line, ' '); 
 		
-		String w;
 		// Remove punction characters
 		w.replaceAll("[^\\w\\s]",""); 
 
@@ -44,9 +54,19 @@ public class DANI extends PApplet {
 		s.toLowerCase() ;
 	}
 
-	public void keyPressed() {
+
+
+	public void keyPressed() 
+	{
 
 	}
+
+	// Adding printmodel
+	public void printmodel()
+	{
+		print("small.txt");
+	}
+	
 
 	float off = 0;
 
@@ -59,4 +79,9 @@ public class DANI extends PApplet {
         textAlign(CENTER, CENTER);
         
 	}
+
+
+
+
+
 }
