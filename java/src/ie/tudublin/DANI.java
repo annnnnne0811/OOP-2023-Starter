@@ -29,10 +29,19 @@ public class DANI extends PApplet {
 	// added the load file method
 	public void loadfile(String string, String string2)
 	{
-		loadStrings("filename.txt"); // Load a text file into a String array
-		split(line, ' '); // Split a string into an array of words
-		w.replaceAll("[^\\w\\s]",""); // Remove punction characters
-		s.toLowerCase() // Convert a string to lower case 
+		// Load a text file into a String array
+		loadStrings("shakespere.txt", "small.txt"); 
+		
+		String line;
+		// Split a string into an array of words
+		split(line, ' '); 
+		
+		String w;
+		// Remove punction characters
+		w.replaceAll("[^\\w\\s]",""); 
+
+		// Convert a string to lower case 
+		s.toLowerCase() ;
 	}
 
 	public void keyPressed() {
