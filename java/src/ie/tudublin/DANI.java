@@ -2,6 +2,8 @@ package ie.tudublin;
 
 import java.util.ArrayList;
 
+import javax.print.DocFlavor.STRING;
+
 import processing.core.PApplet;
 import processing.data.StringList;
 
@@ -65,6 +67,13 @@ public class DANI extends PApplet {
 
 	}
 
+	//Finds the word
+	public void findWord()
+	{
+
+
+	}
+
 
 	private void loadStrings(String string, String string2) {
 	}
@@ -81,7 +90,6 @@ public class DANI extends PApplet {
         textAlign(CENTER, CENTER);
 		println("small.txt");
         
-		
 	}
 
 
