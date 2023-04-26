@@ -8,6 +8,7 @@ import processing.data.StringList;
 public class DANI extends PApplet {
 
 	StringList follow;
+	String line;
 	String w;
 	String s;
 
@@ -53,6 +54,20 @@ public class DANI extends PApplet {
 
 	float off = 0;
 
+
+	public void loadStrings()
+	{
+		loadStrings("shakespere.csv", "small.csv");
+		split(line, ' ');			//Split a string into an array of words
+		w.replaceAll(" ", " "); 	//Removed punction characters
+		s.toLowerCase();	//convert a string to a lower case
+
+
+	}
+
+
+	private void loadStrings(String string, String string2) {
+	}
 
 	//Adding the array. 
 	ArrayList<DANI> dani = new ArrayList<>();
