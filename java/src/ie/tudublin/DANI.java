@@ -1,18 +1,15 @@
 package ie.tudublin;
 
-//import java.util.ArrayList;
+import java.util.ArrayList;
 
 import processing.core.PApplet;
+import processing.data.StringList;
 
 public class DANI extends PApplet {
 
+	StringList Follow;
 	String w;
 	String s;
-
-	private void loadStrings(String string, String string2) 
-	{
-		
-	}
 
 
 
@@ -23,7 +20,7 @@ public class DANI extends PApplet {
 	}
 
     String[] sonnet;
-	private String line;
+	//private String line;
 
 
 
@@ -36,22 +33,6 @@ public class DANI extends PApplet {
 		colorMode(HSB);
 
        
-	}
-
-	// added the load file method
-	public void loadfile(String string, String string2)
-	{
-		// Load a text file into a String array
-		loadStrings("shakespere.txt", "small.txt"); 
-		
-		// Split a string into an array of words
-		split(line, ' '); 
-		
-		// Remove punction characters
-		w.replaceAll("[^\\w\\s]",""); 
-
-		// Convert a string to lower case 
-		s.toLowerCase() ;
 	}
 
 
@@ -77,7 +58,9 @@ public class DANI extends PApplet {
 		noStroke();
 		textSize(20);
         textAlign(CENTER, CENTER);
+		print("small.txt");
         
+		
 	}
 
 
