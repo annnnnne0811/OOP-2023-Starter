@@ -7,7 +7,7 @@ import processing.data.StringList;
 
 public class DANI extends PApplet {
 
-	StringList Follow;
+	StringList follow;
 	String w;
 	String s;
 
@@ -30,6 +30,8 @@ public class DANI extends PApplet {
     }
 
 	public void setup() {
+
+		follow = new StringList();
 		colorMode(HSB);
 
        
@@ -45,11 +47,15 @@ public class DANI extends PApplet {
 	// Adding printmodel
 	public void printmodel()
 	{
-		print("small.txt");
+		println("small.txt");
 	}
 	
 
 	float off = 0;
+
+
+	//Adding the array. 
+	ArrayList<DANI> dani = new ArrayList<>();
 
 	public void draw() 
     {
@@ -58,7 +64,7 @@ public class DANI extends PApplet {
 		noStroke();
 		textSize(20);
         textAlign(CENTER, CENTER);
-		print("small.txt");
+		println("small.txt");
         
 		
 	}
